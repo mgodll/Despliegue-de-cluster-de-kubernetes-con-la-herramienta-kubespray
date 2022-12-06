@@ -275,7 +275,7 @@ local-volume-provisioner   1         1         1       1            1           
 nodelocaldns               1         1         1       1            1           kubernetes.io/os=linux     23m
 ```
 
-Tambien se puede usar `kubectl get daemonset -A`, por lo tanto se ve que el servicio tiene como nombre `kube-multus-ds-amd64`, para borrarlo se digita el siguiente comando
+Tambien se puede usar `kubectl get daemonset -A`,se puede observar que el servicio tiene como nombre `kube-multus-ds-amd64`, para borrarlo se digita el siguiente comando
 
 ```bash
 kubectl delete daemonset kube-multus-ds-amd64 -n kube-system
