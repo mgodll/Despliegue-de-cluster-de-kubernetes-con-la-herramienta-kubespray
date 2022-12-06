@@ -245,19 +245,19 @@ Y por ultimo se verifica que el cluster de kubernetes este en linea con kubectl
 
 ```bash
 kubectl get pods -n kube-system
-# NAME                                          READY   STATUS    RESTARTS       AGE
-# calico-kube-controllers-bd5fc6b6-vlcxs        1/1     Running   1 (6d4h ago)   6d4h
-# calico-node-mlb6h                             1/1     Running   1 (6d4h ago)   6d4h
-# coredns-5c5b9c5cb-s8jhh                       1/1     Running   1 (6d4h ago)   6d4h
-# dns-autoscaler-7874cf6bcf-7thct               1/1     Running   1 (6d4h ago)   6d4h
-# etcd-kubernetes1                              1/1     Running   1 (6d4h ago)   6d4h
-# kube-apiserver-kubernetes1                    1/1     Running   2 (6d4h ago)   6d4h
-# kube-controller-manager-kubernetes1           1/1     Running   2 (6d4h ago)   6d4h
-# kube-multus-ds-amd64-8j5xm                    1/1     Running   1 (6d4h ago)   6d4h
-# kube-proxy-2tkcb                              1/1     Running   1 (6d4h ago)   6d4h
-# kube-scheduler-kubernetes1                    1/1     Running   2 (6d4h ago)   6d4h
-# kubernetes-dashboard-6b49db6997-w6bx5         1/1     Running   1 (6d4h ago)   6d4h
-# kubernetes-metrics-scraper-5dc755864d-qs8kp   1/1     Running   1 (6d4h ago)   6d4h
-# local-volume-provisioner-gzfh9                1/1     Running   1 (6d4h ago)   6d4h
-# nodelocaldns-kpl9d                            1/1     Running   1 (6d4h ago)   6d4h
+NAME                                          READY   STATUS             RESTARTS        AGE
+calico-kube-controllers-6dd874f784-klbvw      1/1     Running            1 (3m52s ago)   3m54s
+calico-node-xc6zt                             1/1     Running            0               4m31s
+coredns-76b4fb4578-q48sh                      1/1     Running            0               3m22s
+dns-autoscaler-7874cf6bcf-ddhws               1/1     Running            0               3m18s
+etcd-pruebas1                                 1/1     Running            0               5m31s
+kube-apiserver-pruebas1                       1/1     Running            1               5m31s
+kube-controller-manager-pruebas1              1/1     Running            1               5m31s
+kube-multus-ds-amd64-52k97                    0/1     CrashLoopBackOff   7 (43s ago)     3m58s
+kube-proxy-5cwjd                              1/1     Running            0               4m34s
+kube-scheduler-pruebas1                       1/1     Running            1               5m31s
+kubernetes-dashboard-584bfbb648-8rgz2         1/1     Running            0               3m14s
+kubernetes-metrics-scraper-5dc755864d-nx2vz   1/1     Running            0               3m14s
+local-volume-provisioner-2j8x6                1/1     Running            0               3m39s
+nodelocaldns-6chf2                            1/1     Running            0               3m17s
 ```
